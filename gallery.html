@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Gallery | Vishaka Paark, Coimbatore</title>
+<meta name="description" content="Photos of Vishaka Paark hotel — rooms, lobby, facilities and dining. See our Executive Double, Twin and Deluxe Triple rooms before you book."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css"/>
+<link rel="stylesheet" href="./css/style.css"/>
+<style>
+.gallery-full{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.gallery-full .gal-item{height:260px;border-radius:6px}
+@media(max-width:680px){.gallery-full{grid-template-columns:1fr 1fr}.gallery-full .gal-item{height:180px}}
+</style>
+</head>
+<body data-page="gallery">
+<header id="navbar"></header>
+<main>
+<div class="page-hero">
+  <div class="breadcrumb"><a href="index.html">Home</a><i class="ti ti-chevron-right"></i>Gallery</div>
+  <div class="eyebrow gold">See Before You Stay</div>
+  <h1>Hotel Gallery</h1>
+  <p>Click any photo to view full size. Every image is from our actual property — no stock photos, no filters.</p>
+</div>
+<section class="section section-alt">
+  <div class="wrap">
+    <div class="gallery-full" id="gallery-full"></div>
+  </div>
+</section>
+<section class="cta-strip">
+  <div class="cta-inner">
+    <div class="cta-left">
+      <div class="eyebrow gold">Liked what you saw?</div>
+      <h2>Book a Room<br><em>Today</em></h2>
+    </div>
+    <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center">
+      <a href="rooms.html" class="btn btn-white btn-lg">View Rooms & Rates</a>
+      <a href="index.html#booking" class="btn btn-outline btn-lg">Check Availability</a>
+    </div>
+  </div>
+</section>
+</main>
+<footer id="footer"></footer>
+<div class="lightbox" id="lightbox" role="dialog" aria-label="Photo viewer">
+  <span class="lb-close" onclick="closeLightbox()" aria-label="Close">&times;</span>
+  <div class="lb-prev" onclick="lbNav(-1)" aria-label="Previous"><i class="ti ti-chevron-left"></i></div>
+  <img src="" alt=""/>
+  <div class="lb-next" onclick="lbNav(1)" aria-label="Next"><i class="ti ti-chevron-right"></i></div>
+</div>
+<a href="#" id="wa-fab" class="wa-fab" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <i class="ti ti-brand-whatsapp" aria-hidden="true"></i>
+</a>
+<script src="./js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+{
+  "hotel": {
+    "name": "Vishaka Paark",
+    "tagline": "Where Every Detail Speaks of Care",
+    "location": "Thudiyalur Road, Saravanampatty, Coimbatore – 641 035",
+    "phone_landline": "0422 4695952",
+    "phone_mobile": "+91 90909 27979",
+    "whatsapp": "919090927979",
+    "email": "hotelvishakapaark@gmail.com",
+    "maps_embed": "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3915.453494330426!2d76.99795197504629!3d11.079539889088212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTHCsDA0JzQ2LjMiTiA3N8KwMDAnMDEuOSJF!5e0!3m2!1sen!2sin!4v1757509116775!5m2!1sen!2sin",
+    "cheerze_hotel_id": "41zCeLBoB8+H6~z6Ej+sDiqeTlZraDAn6WHZSg2lO8k-",
+    "cheerze_booking_base": "https://secure.cheerzeconnect.com/Bookings/engine.html",
+    "social": {
+      "instagram": "https://www.instagram.com/_hotel_vishaka_paark_",
+      "facebook": "https://www.facebook.com/share/1Gbzoj2aPk/"
+    },
+    "stats": { "rooms": 24, "rating": 4.7, "amenities": 16, "years": 3 }
+  },
+  "rooms": [
+    {
+      "id": "executive-double",
+      "slug": "executive-double",
+      "type": "Executive Double",
+      "for": "Solo & Couples",
+      "badge": "Best Seller",
+      "badge_style": "crimson",
+      "description": "A plush king-size bed with premium linen, smart TV, climate-control AC, and a private attached bathroom. Designed for the solo business traveller or a couple seeking comfort and quiet.",
+      "price": 2740,
+      "price_original": 3045,
+      "discount_pct": 10,
+      "image": "https://vishakapaark.com/wp-content/uploads/2025/09/rdp_room1.png",
+      "amenities": ["King Size Bed", "Smart TV", "Complimentary Breakfast", "AC", "Free Wifi", "Attached Bathroom", "Coffee Maker", "RO Water", "Godrej Smart Lock"]
+    },
+    {
+      "id": "executive-twin",
+      "slug": "executive-twin",
+      "type": "Executive Twin",
+      "for": "Friends & Colleagues",
+      "badge": null,
+      "badge_style": null,
+      "description": "Two separate premium beds ensuring privacy and independence. Perfect for business colleagues or friends travelling together who want their own space without compromise.",
+      "price": 3058,
+      "price_original": 3398,
+      "discount_pct": 10,
+      "image": "https://vishakapaark.com/wp-content/uploads/2025/09/rdp_room2.png",
+      "amenities": ["Twin Beds", "Smart TV", "Complimentary Breakfast", "AC", "Free Wifi", "Attached Bathroom", "Coffee Maker", "RO Water", "Godrej Smart Lock"]
+    },
+    {
+      "id": "deluxe-triple",
+      "slug": "deluxe-triple",
+      "type": "Deluxe Triple",
+      "for": "Families & Groups",
+      "badge": "Family Pick",
+      "badge_style": "gold",
+      "description": "Spacious layout with a king bed plus a single bed. Extra room to spread out, relax, and make every family stay feel like a home away from home.",
+      "price": 4222,
+      "price_original": 4691,
+      "discount_pct": 10,
+      "image": "https://vishakapaark.com/wp-content/uploads/2025/09/rdp_room3.png",
+      "amenities": ["King + Single Bed", "Smart TV", "Complimentary Breakfast", "AC", "Free Wifi", "Attached Bathroom", "Coffee Maker", "RO Water", "Godrej Smart Lock"]
+    }
+  ],
+  "facilities": [
+    { "id": "security",   "icon": "ti-shield-check",    "name": "24/7 Security & CCTV",       "short": "Always watching",          "desc": "HD CCTV cameras cover all corridors, entry points and common areas — monitored every hour of every day by trained staff.", "category": "safety" },
+    { "id": "frontdesk",  "icon": "ti-building-store",  "name": "24×7 Front Desk",            "short": "Always here for you",       "desc": "Our front desk staff are available round the clock — for check-ins at 3am, local tips at midnight, or anything in between.", "category": "service" },
+    { "id": "power",      "icon": "ti-bolt",            "name": "24hr Power Backup",          "short": "Zero outages, ever",        "desc": "Full generator backup ensures your room stays powered, air-conditioned and connected — no matter what the grid does.", "category": "comfort" },
+    { "id": "water",      "icon": "ti-droplet",         "name": "Hot & Cold Water",           "short": "Perfect every time",        "desc": "Instant hot water available at any hour. No waiting, no cold surprises — a perfect shower every single time.", "category": "comfort" },
+    { "id": "bed",        "icon": "ti-bed",             "name": "King Size Bed",              "short": "Sleep like royalty",        "desc": "Executive-grade mattresses with plush duvets, crisp white linen, and the signature crimson throw accent unique to Vishaka Paark.", "category": "comfort" },
+    { "id": "wifi",       "icon": "ti-wifi",            "name": "High-Speed Wifi",            "short": "Fibre-grade connectivity",  "desc": "High-bandwidth wifi throughout the property — fast enough for video calls, 4K streaming and remote work without interruption.", "category": "tech" },
+    { "id": "breakfast",  "icon": "ti-coffee",          "name": "Complimentary Breakfast",    "short": "Start every day right",     "desc": "A fresh, wholesome breakfast is included with every room — served every morning to fuel your day whether for business or leisure.", "category": "dining" },
+    { "id": "transfer",   "icon": "ti-car",             "name": "Pickup & Drop",              "short": "Door-to-door transfer",     "desc": "Convenient airport and railway station transfers arranged on request. Arrive and depart with absolutely zero stress.", "category": "service" },
+    { "id": "parking",    "icon": "ti-parking",         "name": "Parking Facilities",         "short": "Secure on-site parking",   "desc": "Dedicated, CCTV-monitored parking space for every guest's vehicle — available anytime, included in your stay at no extra charge.", "category": "service" },
+    { "id": "rowater",    "icon": "ti-glass",           "name": "Safe RO Drinking Water",     "short": "Pure water, always",        "desc": "Filtered RO-purified drinking water available in every room. Safe, clean and refreshing — no need to buy bottles.", "category": "comfort" },
+    { "id": "checkout",   "icon": "ti-clock-24",        "name": "24hr Flexible Checkout",     "short": "Leave on your schedule",   "desc": "Unlike most hotels, we offer truly flexible 24-hour checkout — no pressure, no extra fee. A rare and genuine differentiator.", "category": "service" },
+    { "id": "tv",         "icon": "ti-device-tv",       "name": "In-Room Entertainment",      "short": "Your personal screen",      "desc": "Wall-mounted smart TV in every room with access to streaming apps, news and sports — your entertainment, your way.", "category": "tech" },
+    { "id": "location",   "icon": "ti-map-pin",         "name": "Prime Location",             "short": "Heart of the IT corridor",  "desc": "Situated on Thudiyalur Road, Saravanampatty — walking distance from major IT campuses, perfectly connected to Coimbatore city.", "category": "location" },
+    { "id": "bar",        "icon": "ti-bottle",          "name": "Attached Bar",               "short": "Unwind after your day",     "desc": "An in-house bar with a curated selection of drinks and beverages — the ideal way to decompress after a long day of work or travel.", "category": "dining" },
+    { "id": "coffee",     "icon": "ti-cup",             "name": "Coffee Maker",               "short": "Brew anytime you like",     "desc": "A personal coffee maker in every room so you can enjoy a fresh cup whenever you want — early morning or late at night.", "category": "tech" },
+    { "id": "lock",       "icon": "ti-lock",            "name": "Godrej Smart Lock",          "short": "Electronic keycard entry",  "desc": "Every room uses a Godrej electronic smart lock — tamper-proof, secure, and far more reliable than a traditional key.", "category": "safety" }
+  ],
+  "testimonials": [
+    { "initials": "RK", "name": "Rajesh Kumar",  "from": "Chennai",    "type": "Business Stay", "stars": 5, "text": "The room was immaculate. Loved the wooden headboard with that warm backlight — it made the whole space feel premium. Staff were genuinely kind and the checkout was completely flexible." },
+    { "initials": "PM", "name": "Priya Mohan",   "from": "Bangalore",  "type": "Family Trip",   "stars": 5, "text": "Came with my family and booked the Deluxe Triple. Kids had space to play, breakfast was proper and fresh, and the price was very reasonable compared to other hotels nearby." },
+    { "initials": "SA", "name": "Suresh Anand",  "from": "Hyderabad",  "type": "Work Trip",     "stars": 4, "text": "Location is unbeatable if you're working in the IT corridor. Fast Wi-Fi, comfortable beds, smooth check-in. Will definitely book again on my next trip to Coimbatore." },
+    { "initials": "DV", "name": "Divya Venkat",  "from": "Coimbatore", "type": "Weekend Stay",  "stars": 5, "text": "Staycation done right. The bar is a bonus I did not expect. Clean rooms, great breakfast, and the staff remembered my name by day two. Felt like a boutique experience." }
+  ],
+  "gallery": [
+    { "src": "https://vishakapaark.com/wp-content/uploads/2025/09/gall-1.png", "alt": "Hotel room interior" },
+    { "src": "https://vishakapaark.com/wp-content/uploads/2025/09/gall-2.png", "alt": "Room amenities and detail" },
+    { "src": "https://vishakapaark.com/wp-content/uploads/2025/09/gall-3.png", "alt": "Hotel facilities" },
+    { "src": "https://vishakapaark.com/wp-content/uploads/2025/09/gall-4.png", "alt": "Lounge and common area" },
+    { "src": "https://vishakapaark.com/wp-content/uploads/2025/09/rdp_room1.png", "alt": "Executive Double Room" },
+    { "src": "https://vishakapaark.com/wp-content/uploads/2025/09/rdp_room2.png", "alt": "Executive Twin Room" },
+    { "src": "https://vishakapaark.com/wp-content/uploads/2025/09/rdp_room3.png", "alt": "Deluxe Triple Room" },
+    { "src": "https://vishakapaark.com/wp-content/uploads/2025/09/about-img.png", "alt": "Lobby and reception area" }
+  ]
+}
