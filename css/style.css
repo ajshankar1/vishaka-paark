@@ -118,16 +118,16 @@ strong { font-weight: 600; color: var(--charcoal); font-style: normal; }
 /* ── NAVBAR ── */
 .navbar {
   position: sticky; top: 0; z-index: 1000;
-  display: grid;
-  grid-template-columns: auto 1fr auto;
+  display: flex;
   align-items: center;
-  gap: 32px;
+  justify-content: space-between;
   padding: 0 60px; height: 76px;
   background: rgba(15,11,9,0.97);
   backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--border-gold);
 }
 .nav-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; flex-shrink: 0; }
+.nav-logo-img { height: 48px; width: auto; object-fit: contain; display: block; }
 .logo-text { display: flex; flex-direction: column; line-height: 1; }
 .logo-name {
   font-family: 'Cormorant Garamond', serif;
