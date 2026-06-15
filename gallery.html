@@ -3,55 +3,44 @@
 <head>
 <meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 <title>Gallery | Vishaka Paark, Coimbatore</title>
-<meta name="description" content="Photos of Vishaka Paark hotel — rooms, lobby, facilities and dining. See our Executive Double, Twin and Deluxe Triple rooms before you book."/>
+<meta name="description" content="Photos of Vishaka Paark hotel rooms, lobby and facilities in Saravanampatty, Coimbatore."/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css"/>
 <link rel="stylesheet" href="./css/style.css"/>
-<style>
-.gallery-full{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
-.gallery-full .gal-item{height:260px;border-radius:6px}
-@media(max-width:680px){.gallery-full{grid-template-columns:1fr 1fr}.gallery-full .gal-item{height:180px}}
-</style>
 </head>
 <body data-page="gallery">
-<header id="navbar"></header>
-<main>
+<header class="navbar">
+  <a href="index.html" class="nav-logo"><img src="https://vishakapaark.com/wp-content/uploads/2025/09/logo.svg" alt="Vishaka Paark" class="nav-logo-img" onerror="this.style.display='none'"/></a>
+  <nav class="nav-center"><ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="rooms.html">Rooms</a></li><li><a href="gallery.html" class="active">Gallery</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+  <div class="nav-right"><a href="tel:+919090927979" class="nav-phone"><i class="ti ti-phone" aria-hidden="true"></i> +91 90909 27979</a><a href="rooms.html#booking" class="btn-nav">Book Now</a></div>
+</header>
 <div class="page-hero">
   <div class="breadcrumb"><a href="index.html">Home</a><i class="ti ti-chevron-right"></i>Gallery</div>
-  <div class="eyebrow gold">See Before You Stay</div>
+  <p class="sec-eyebrow gold">See Before You Stay</p>
   <h1>Hotel Gallery</h1>
-  <p>Click any photo to view full size. Every image is from our actual property — no stock photos, no filters.</p>
+  <p>Every image is from our actual property — no stock photos, no filters.</p>
 </div>
-<section class="section section-alt">
-  <div class="wrap">
+<section class="gal-sec" style="padding-top:72px">
+  <div class="wrap" style="max-width:1300px;margin:0 auto">
     <div class="gallery-full" id="gallery-full"></div>
   </div>
 </section>
-<section class="cta-strip">
-  <div class="cta-inner">
-    <div class="cta-left">
-      <div class="eyebrow gold">Liked what you saw?</div>
-      <h2>Book a Room<br><em>Today</em></h2>
-    </div>
-    <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center">
-      <a href="rooms.html" class="btn btn-white btn-lg">View Rooms & Rates</a>
-      <a href="index.html#booking" class="btn btn-outline btn-lg">Check Availability</a>
-    </div>
+<section class="cta-sec">
+  <div class="cta-left"><p class="sec-eyebrow gold">Liked what you saw?</p><h2 class="sec-h2 white">Book a Room <em>Today</em></h2></div>
+  <div style="display:flex;gap:14px;flex-wrap:wrap;align-items:center">
+    <a href="rooms.html" class="cta-btn-w">View Rooms & Rates</a>
+    <a href="rooms.html#booking" class="cta-btn-o">Check Availability</a>
   </div>
 </section>
-</main>
-<footer id="footer"></footer>
-<div class="lightbox" id="lightbox" role="dialog" aria-label="Photo viewer">
-  <span class="lb-close" onclick="closeLightbox()" aria-label="Close">&times;</span>
-  <div class="lb-prev" onclick="lbNav(-1)" aria-label="Previous"><i class="ti ti-chevron-left"></i></div>
-  <img src="" alt=""/>
-  <div class="lb-next" onclick="lbNav(1)" aria-label="Next"><i class="ti ti-chevron-right"></i></div>
+<footer class="footer" id="footer"></footer>
+<div class="lightbox" id="lightbox">
+  <button class="lb-close" onclick="closeLb()">&times;</button>
+  <button class="lb-prev" onclick="lbNav(-1)"><i class="ti ti-chevron-left" aria-hidden="true"></i></button>
+  <img src="" alt="" id="lb-img"/>
+  <button class="lb-next" onclick="lbNav(1)"><i class="ti ti-chevron-right" aria-hidden="true"></i></button>
 </div>
-<a href="#" id="wa-fab" class="wa-fab" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
-  <i class="ti ti-brand-whatsapp" aria-hidden="true"></i>
-</a>
+<a href="https://wa.me/919090927979" class="wa-fab" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="ti ti-brand-whatsapp" aria-hidden="true"></i></a>
 <script src="./js/app.js"></script>
-</body>
-</html>
+</body></html>
