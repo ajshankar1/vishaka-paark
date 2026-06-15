@@ -118,7 +118,10 @@ strong { font-weight: 600; color: var(--charcoal); font-style: normal; }
 /* ── NAVBAR ── */
 .navbar {
   position: sticky; top: 0; z-index: 1000;
-  display: flex; align-items: center; justify-content: space-between;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 32px;
   padding: 0 60px; height: 76px;
   background: rgba(15,11,9,0.97);
   backdrop-filter: blur(16px);
@@ -135,14 +138,14 @@ strong { font-weight: 600; color: var(--charcoal); font-style: normal; }
   font-size: 9px; letter-spacing: 0.22em; text-transform: uppercase;
   color: rgba(255,255,255,0.3); font-weight: 400; margin-top: 4px;
 }
-.nav-links { display: flex; gap: 36px; }
+.nav-links { display: flex; gap: 36px; justify-content: center; align-items: center; list-style: none; }
 .nav-links a {
   font-size: 13px; font-weight: 400;
   letter-spacing: 0.1em; text-transform: uppercase;
   color: rgba(255,255,255,0.6); transition: color 0.2s;
 }
 .nav-links a:hover, .nav-links a.active { color: var(--gold); }
-.nav-right { display: flex; align-items: center; gap: 20px; flex-shrink: 0; }
+.nav-right { display: flex; align-items: center; gap: 20px; flex-shrink: 0; justify-content: flex-end; }
 .nav-phone {
   font-size: 13px; color: rgba(255,255,255,0.45); font-weight: 300;
   display: flex; align-items: center; gap: 7px; text-decoration: none; transition: color 0.2s;
@@ -161,17 +164,19 @@ strong { font-weight: 600; color: var(--charcoal); font-style: normal; }
   position: absolute; inset: 0;
   background-image: url('https://vishakapaark.com/wp-content/uploads/2025/09/rdp_room2.png');
   background-size: cover; background-position: center 40%;
-  opacity: 0.3; transform: scale(1.04);
+  opacity: 0.45; transform: scale(1.04);
   transition: transform 9s ease, opacity 1.2s ease;
 }
 .hero-bg.loaded { transform: scale(1); }
 .hero-veil {
   position: absolute; inset: 0;
-  background: linear-gradient(108deg, rgba(15,11,9,0.97) 30%, rgba(15,11,9,0.6) 60%, rgba(15,11,9,0.2) 100%);
+  background: linear-gradient(105deg, rgba(15,11,9,0.97) 0%, rgba(15,11,9,0.92) 35%, rgba(15,11,9,0.55) 60%, rgba(15,11,9,0.15) 100%);
 }
 .hero-content {
   position: relative; z-index: 2;
-  padding: 80px 80px; max-width: 680px;
+  padding: 80px 80px;
+  width: 55%;
+  min-width: 500px;
 }
 .hero-kicker {
   display: flex; align-items: center; gap: 12px;
@@ -232,11 +237,11 @@ strong { font-weight: 600; color: var(--charcoal); font-style: normal; }
 .bar-btn { padding: 14px 24px; font-size: 13px; }
 
 /* ── RIBBON ── */
-.ribbon { background: var(--crimson); padding: 0 60px; }
+.ribbon { background: var(--crimson); padding: 0 40px; }
 .ribbon-inner {
   max-width: 1200px; margin: 0 auto;
   display: flex; justify-content: space-around; align-items: center;
-  padding: 24px 0; flex-wrap: wrap; gap: 20px;
+  padding: 22px 0; flex-wrap: wrap; gap: 16px;
 }
 .ribbon-item { text-align: center; }
 .ribbon-num {
@@ -244,8 +249,8 @@ strong { font-weight: 600; color: var(--charcoal); font-style: normal; }
   font-size: 32px; font-weight: 700; color: var(--white); line-height: 1;
 }
 .ribbon-lbl {
-  font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase;
-  color: rgba(255,255,255,0.55); margin-top: 5px;
+  font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase;
+  color: rgba(255,255,255,0.75); margin-top: 5px; white-space: nowrap;
 }
 .ribbon-div { width: 1px; height: 32px; background: rgba(255,255,255,0.2); }
 
@@ -618,8 +623,8 @@ strong { font-weight: 600; color: var(--charcoal); font-style: normal; }
 /* ── RESPONSIVE ── */
 @media (max-width: 1100px) {
   .section       { padding: 64px 36px; }
-  .navbar        { padding: 0 36px; }
-  .hero-content  { padding: 64px 48px; }
+  .navbar        { padding: 0 36px; grid-template-columns: auto 1fr auto; gap: 20px; }
+  .hero-content  { padding: 64px 48px; width: 65%; min-width: 0; }
   .booking-bar   { padding: 18px 36px; }
   .booking-grid  { grid-template-columns: 1fr; gap: 48px; }
   .about-split   { grid-template-columns: 1fr; }
@@ -640,7 +645,7 @@ strong { font-weight: 600; color: var(--charcoal); font-style: normal; }
 }
 @media (max-width: 720px) {
   .section       { padding: 48px 24px; }
-  .navbar        { padding: 0 24px; height: 68px; }
+  .navbar        { padding: 0 20px; height: 68px; grid-template-columns: auto 1fr; }
   .nav-links     { display: none; }
   .nav-phone span { display: none; }
   .hero-content  { padding: 48px 28px 56px; }
