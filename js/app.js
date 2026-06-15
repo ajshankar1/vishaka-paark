@@ -218,9 +218,9 @@ function renderFooter(){
       </div>
         <p class="footer-tagline">Boutique hospitality in Saravanampatty — Coimbatore's IT corridor.</p>
         <div class="footer-social">
-          <a href="${h.social.instagram}" class="soc-btn" aria-label="Instagram" target="_blank" rel="noopener"><i class="ti ti-brand-instagram" aria-hidden="true"></i></a>
-          <a href="${h.social.facebook}"  class="soc-btn" aria-label="Facebook"  target="_blank" rel="noopener"><i class="ti ti-brand-facebook"  aria-hidden="true"></i></a>
-          <a href="https://wa.me/${h.whatsapp}" class="soc-btn" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="ti ti-brand-whatsapp" aria-hidden="true"></i></a>
+          <a href="https://www.instagram.com/_hotel_vishaka_paark_" class="soc-btn soc-insta" aria-label="Instagram" target="_blank" rel="noopener"><i class="ti ti-brand-instagram" aria-hidden="true"></i></a>
+          <a href="https://www.facebook.com/share/1Gbzoj2aPk/" class="soc-btn soc-fb" aria-label="Facebook" target="_blank" rel="noopener"><i class="ti ti-brand-facebook" aria-hidden="true"></i></a>
+          <a href="https://wa.me/${h.whatsapp}" class="soc-btn soc-wa" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="ti ti-brand-whatsapp" aria-hidden="true"></i></a>
         </div>
       </div>
       <div class="footer-col"><h4>Navigate</h4><ul>
@@ -586,6 +586,9 @@ document.addEventListener('DOMContentLoaded',()=>{
   renderNav();
   renderFooter();
   initWaFab();
+  // Ensure footer is visible
+  const footer = document.getElementById('footer');
+  if(footer) footer.style.display = 'block';
   const page=document.body.dataset.page||'home';
   if(page==='home')    renderHome();
   if(page==='rooms')   renderRoomsPage();
