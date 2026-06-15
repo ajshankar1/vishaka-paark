@@ -91,17 +91,13 @@ const HOTEL = {
   ]
 };
 
-/* ── LOGO SVG ── */
-function logoSVG(w=32,h=36){
-  return `<svg width="${w}" height="${h}" viewBox="0 0 32 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M16 2C16 2,10 8,10 16C10 20,12 23,16 24C20 23,22 20,22 16C22 8,16 2,16 2Z" fill="#896C3E" opacity="0.92"/>
-    <path d="M16 4C16 4,6 10,5 18C4.5 22,7 26,16 28C25 26,27.5 22,27 18C26 10,16 4,16 4Z" fill="none" stroke="#896C3E" stroke-width="0.8" opacity="0.35"/>
-    <path d="M16 24C16 24,6 20,4 14C3 10,5 7,9 8C12 9,14 14,16 24Z" fill="#896C3E" opacity="0.72"/>
-    <path d="M16 24C16 24,26 20,28 14C29 10,27 7,23 8C20 9,18 14,16 24Z" fill="#896C3E" opacity="0.72"/>
-    <line x1="16" y1="24" x2="16" y2="33" stroke="#896C3E" stroke-width="1.4" stroke-linecap="round"/>
-    <path d="M11 33Q16 31,21 33" stroke="#896C3E" stroke-width="1.2" fill="none" stroke-linecap="round"/>
-    <circle cx="16" cy="15" r="2.2" fill="#0F0B09"/>
-  </svg>`;
+/* ── LOGO IMAGE (real logo from vishakapaark.com) ── */
+function logoSVG(w=48,h=48){
+  return `<img src="https://vishakapaark.com/wp-content/uploads/2025/09/logo.png"
+    alt="Vishaka Paark" height="${h}"
+    style="height:${h}px;width:auto;object-fit:contain;display:block;"
+    onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
+  /><span style="display:none;font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:700;color:#896C3E;letter-spacing:0.03em">VP</span>`;
 }
 
 /* ── CHEERZE URL ── */
@@ -187,23 +183,24 @@ function renderNav(){
   if(!el)return;
   el.innerHTML=`
     <a href="index.html" class="nav-logo" aria-label="Vishaka Paark home">
-      ${logoSVG(30,34)}
-      <div class="logo-text">
-        <span class="logo-name">Vishaka Paark</span>
-        <span class="logo-sub">Coimbatore</span>
-      </div>
+      <img src="https://vishakapaark.com/wp-content/uploads/2025/09/logo.png"
+        alt="Vishaka Paark" class="nav-logo-img"
+        onerror="this.style.display='none';this.insertAdjacentHTML('afterend','<span style=\'font-family:Cormorant Garamond,serif;font-size:20px;font-weight:700;color:#896C3E;letter-spacing:0.02em\'>Vishaka Paark</span>')"
+      />
     </a>
-    <nav aria-label="Main navigation">
-      <ul class="nav-links" role="list">
-        ${links.map(l=>`<li><a href="${l.href}" class="${l.p===page?'active':''}">${l.label}</a></li>`).join('')}
-      </ul>
-    </nav>
-    <div class="nav-right">
-      <a href="tel:${h.phone_mobile}" class="nav-phone">
-        <i class="ti ti-phone-call" aria-hidden="true"></i>
-        <span>${h.phone_mobile}</span>
-      </a>
-      <a href="#booking" class="btn btn-gold">Book Now</a>
+    <div class="nav-right-group">
+      <nav aria-label="Main navigation">
+        <ul class="nav-links" role="list">
+          ${links.map(l=>`<li><a href="${l.href}" class="${l.p===page?'active':''}">${l.label}</a></li>`).join('')}
+        </ul>
+      </nav>
+      <div class="nav-right">
+        <a href="tel:${h.phone_mobile}" class="nav-phone">
+          <i class="ti ti-phone-call" aria-hidden="true"></i>
+          <span>${h.phone_mobile}</span>
+        </a>
+        <a href="#booking" class="btn btn-gold">Book Now</a>
+      </div>
     </div>`;
 }
 
@@ -215,7 +212,10 @@ function renderFooter(){
   el.innerHTML=`
     <div class="footer-body">
       <div class="footer-brand">
-        <div class="footer-logo">${logoSVG(26,30)}<span class="footer-logo-name">Vishaka Paark</span></div>
+        <div class="footer-logo">
+        <img src="https://vishakapaark.com/wp-content/uploads/2025/09/logo.png" alt="Vishaka Paark" style="height:40px;width:auto;filter:brightness(0) saturate(100%) invert(48%) sepia(45%) saturate(400%) hue-rotate(5deg) brightness(90%)" onerror="this.style.display='none'"/>
+        <span class="footer-logo-name">Vishaka Paark</span>
+      </div>
         <p class="footer-tagline">Boutique hospitality in Saravanampatty — Coimbatore's IT corridor.</p>
         <div class="footer-social">
           <a href="${h.social.instagram}" class="soc-btn" aria-label="Instagram" target="_blank" rel="noopener"><i class="ti ti-brand-instagram" aria-hidden="true"></i></a>
