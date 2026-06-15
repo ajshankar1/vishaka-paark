@@ -122,9 +122,8 @@ strong { font-weight: 600; color: var(--charcoal); font-style: normal; }
   align-items: center;
   justify-content: space-between;
   padding: 0 60px; height: 76px;
-  background: rgba(15,11,9,0.97);
-  backdrop-filter: blur(16px);
-  border-bottom: 1px solid var(--border-gold);
+  background: #0F0B09;
+  border-bottom: 1px solid rgba(137,108,62,0.4);
 }
 .nav-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; flex-shrink: 0; }
 .nav-logo-img { height: 48px; width: auto; object-fit: contain; display: block; }
@@ -237,22 +236,22 @@ strong { font-weight: 600; color: var(--charcoal); font-style: normal; }
 .bar-btn { padding: 14px 24px; font-size: 13px; }
 
 /* ── RIBBON ── */
-.ribbon { background: var(--crimson); padding: 0 40px; }
+.ribbon { background: #8B1A2E; padding: 0 40px; }
 .ribbon-inner {
   max-width: 1200px; margin: 0 auto;
   display: flex; justify-content: space-around; align-items: center;
-  padding: 22px 0; flex-wrap: wrap; gap: 16px;
+  padding: 26px 0; flex-wrap: wrap; gap: 16px;
 }
 .ribbon-item { text-align: center; }
 .ribbon-num {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 32px; font-weight: 700; color: var(--white); line-height: 1;
+  font-size: 32px; font-weight: 700; color: #FFFFFF; line-height: 1;
 }
 .ribbon-lbl {
-  font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase;
-  color: rgba(255,255,255,0.75); margin-top: 5px; white-space: nowrap;
+  font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase;
+  color: rgba(255,255,255,0.9); margin-top: 5px; white-space: nowrap; font-weight: 400;
 }
-.ribbon-div { width: 1px; height: 32px; background: rgba(255,255,255,0.2); }
+.ribbon-div { width: 1px; height: 32px; background: rgba(255,255,255,0.35); }
 
 /* ── ABOUT SPLIT ── */
 .about-split { display: grid; grid-template-columns: 1fr 1fr; min-height: 560px; }
@@ -476,13 +475,13 @@ strong { font-weight: 600; color: var(--charcoal); font-style: normal; }
 .cta-left h2 { color: var(--white); font-size: clamp(28px,3vw,44px); max-width: 400px; }
 .cta-left h2 em { color: #F4C2C2; }
 .cta-right { display: flex; flex-direction: column; gap: 16px; }
-.cta-row { display: flex; align-items: center; gap: 12px; font-size: 15px; color: rgba(255,255,255,0.75); }
-.cta-row a { color: rgba(255,255,255,0.75); text-decoration: none; transition: color 0.2s; }
+.cta-row { display: flex; align-items: center; gap: 12px; font-size: 15px; color: rgba(255,255,255,0.9); }
+.cta-row a { color: rgba(255,255,255,0.9); text-decoration: none; transition: color 0.2s; }
 .cta-row a:hover { color: var(--white); }
-.cta-row i { color: #F4C2C2; font-size: 20px; flex-shrink: 0; }
+.cta-row i { color: #FFCDD8; font-size: 20px; flex-shrink: 0; }
 
 /* ── FOOTER ── */
-.footer { background: #080604; padding: 56px 60px 24px; }
+.footer { background: #0A0705; padding: 56px 60px 24px; display: block; width: 100%; }
 .footer-body {
   max-width: 1200px; margin: 0 auto;
   display: flex; justify-content: space-between; gap: 48px;
@@ -494,9 +493,9 @@ strong { font-weight: 600; color: var(--charcoal); font-style: normal; }
 .footer-logo  { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; }
 .footer-logo-name {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 22px; font-weight: 600; color: var(--gold);
+  font-size: 22px; font-weight: 600; color: #896C3E;
 }
-.footer-tagline { font-size: 13px; color: rgba(255,255,255,0.28); line-height: 1.7; font-weight: 300; margin-bottom: 20px; }
+.footer-tagline { font-size: 13px; color: rgba(255,255,255,0.55); line-height: 1.7; font-weight: 300; margin-bottom: 20px; }
 .footer-social  { display: flex; gap: 10px; }
 .soc-btn {
   width: 36px; height: 36px; border-radius: var(--r);
@@ -505,25 +504,31 @@ strong { font-weight: 600; color: var(--charcoal); font-style: normal; }
   color: rgba(255,255,255,0.4); font-size: 17px; transition: all 0.2s; text-decoration: none;
 }
 .soc-btn:hover { background: var(--crimson); color: var(--white); border-color: var(--crimson); }
+.soc-btn .ti-brand-instagram:hover { background: #E1306C; }
+.soc-btn .ti-brand-facebook:hover  { background: #1877F2; }
+.soc-btn .ti-brand-whatsapp:hover  { background: #25D366; }
 .footer-col h4 {
   font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase;
-  color: rgba(255,255,255,0.3); font-weight: 500; margin-bottom: 16px;
+  color: rgba(255,255,255,0.6); font-weight: 500; margin-bottom: 16px;
 }
 .footer-col ul { display: flex; flex-direction: column; gap: 10px; }
-.footer-col a  { color: rgba(255,255,255,0.48); font-size: 14px; font-weight: 300; transition: color 0.2s; }
+.footer-col a  { color: rgba(255,255,255,0.7); font-size: 14px; font-weight: 300; transition: color 0.2s; }
 .footer-col a:hover { color: var(--gold); }
-.footer-col .addr { color: rgba(255,255,255,0.25); font-size: 12px; line-height: 1.65; }
+.footer-col .addr { color: rgba(255,255,255,0.5); font-size: 12px; line-height: 1.65; }
 .footer-bottom {
   max-width: 1200px; margin: 0 auto;
   padding-top: 20px; display: flex; justify-content: space-between;
   align-items: center; flex-wrap: wrap; gap: 12px;
 }
-.footer-copy { font-size: 13px; color: rgba(255,255,255,0.2); font-weight: 300; }
+.footer-copy { font-size: 13px; color: rgba(255,255,255,0.5); font-weight: 300; }
 .tripadvisor-link {
   display: flex; align-items: center; gap: 7px;
-  font-size: 13px; color: rgba(255,255,255,0.3); text-decoration: none; transition: color 0.2s;
+  font-size: 13px; color: rgba(255,255,255,0.55); text-decoration: none; transition: color 0.2s;
 }
 .tripadvisor-link:hover { color: #34E0A1; }
+.soc-insta:hover { background: #E1306C !important; border-color: #E1306C !important; color: #fff !important; }
+.soc-fb:hover    { background: #1877F2 !important; border-color: #1877F2 !important; color: #fff !important; }
+.soc-wa:hover    { background: #25D366 !important; border-color: #25D366 !important; color: #fff !important; }
 
 /* ── PAGE HERO (inner pages) ── */
 .page-hero {
